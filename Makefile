@@ -25,6 +25,10 @@ clean:
 	$(RM) -r bin
 	$(RM) -r dist
 
+coverage:
+	GO111MODULE=off go get github.com/mattn/goveralls
+	$(shell go env GOPATH)/bin/goveralls -coverprofile=coverage.out -service=github
+
 fmt: $(SOURCES_NO_VENDOR)
 	gofmt -w -s $^
 
@@ -50,4 +54,4 @@ man:
 	find share/man -type f -name "*.1" -exec sed -i.bak "s/{{VERSION}}/$(shell cat VERSION)/g" {} \;
 	rm -fr share/man/**/*.bak
 
-.PHONY: all ci docs man install bench clean fmt lint test tidy vet
+.PHONY: all docs man install bench clean coverage fmt lint test tidy vet
