@@ -6,7 +6,6 @@
 &nbsp;
 [![Coveralls github branch](https://img.shields.io/coveralls/github/craftyphotons/brvs-go/main?style=for-the-badge)](https://coveralls.io/github/craftyphotons/brvs-go)
 &nbsp;
-[![Gem](https://img.shields.io/gem/v/brvs?style=for-the-badge)](https://rubygems.org/gems/brvs)
 
 Go client library for [Brvs](https://github.com/craftyphotons/brvs), an open source URL shortener and branded link management application.
 
