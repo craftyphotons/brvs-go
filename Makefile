@@ -13,7 +13,7 @@ SOURCES_NO_VENDOR := $(shell find . -path ./vendor -prune -o -name "*.go" -not -
 
 all: install
 
-install: clean vet lint test build
+install: clean vet test build
 
 bench:
 	$(GO_TEST) -bench=. -run=^$$ ./...
