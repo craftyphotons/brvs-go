@@ -48,7 +48,7 @@ GEM
     public_suffix (4.0.5)
     rainbow (3.0.0)
     rchardet (1.8.0)
-    regexp_parser (1.7.1)
+    regexp_parser (1.8.0)
     rexml (3.2.4)
     rubocop (0.89.1)
       parallel (~> 1.10)
@@ -59,10 +59,11 @@ GEM
       rubocop-ast (>= 0.3.0, < 1.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 2.0)
-    rubocop-ast (0.3.0)
+    rubocop-ast (0.4.2)
       parser (>= 2.7.1.4)
-    rubocop-performance (1.7.1)
-      rubocop (>= 0.82.0)
+    rubocop-performance (1.8.1)
+      rubocop (>= 0.87.0)
+      rubocop-ast (>= 0.4.0)
     ruby-progressbar (1.10.1)
     sawyer (0.8.2)
       addressable (>= 2.3.5)
@@ -77,7 +78,7 @@ PLATFORMS
 DEPENDENCIES
   danger (~> 8.0)
   rubocop (~> 0.89)
-  rubocop-performance (~> 1.7)
+  rubocop-performance (~> 1.8)
 
 BUNDLED WITH
    2.1.4
