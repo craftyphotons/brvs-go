@@ -20,7 +20,7 @@ jobs:
           ruby-version: 2.7
 
       - name: Ruby gem cache
-        uses: actions/cache@v2.1.0
+        uses: actions/cache@v2.1.4
         with:
           path: .bundle # vendor directory has special meaning in Go 1.14
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
