@@ -44,7 +44,7 @@ jobs:
           bundle exec rubocop --parallel
 
       - name: Run golangci-lint
-        uses: golangci/golangci-lint-action@v2.2.0
+        uses: golangci/golangci-lint-action@v2.5.1
         with:
           version: v1.30
 
